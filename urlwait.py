@@ -1,19 +1,14 @@
 #!/usr/bin/env python3
-import os
-import sys
 import time
+
+import click
 from requests import get
 
 
-def main():
-    if  len(sys.argv) < 2:
-        print('Provide url to wait for!')
-        sys.exit(1)
-    elif len(sys.argv) > 2:
-        print('Too many arguments!')
-        sys.exit(1)
 
-    url = sys.argv[1]
+@click.command()
+@click.argument('url',)
+def main(url):
     if not url.startswith('http'):
         url = 'http://' + url
     print(f'urlwait: waiting for {url}')

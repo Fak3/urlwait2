@@ -16,6 +16,7 @@ setup(
     author_email='someuniquename@gmail.com',
     url='https://github.com/Fak3/urlwait',
     license='MIT',
+    install_requires=['click'],
     py_modules=['urlwait'],
     include_package_data=True,
     entry_points={
