@@ -5,13 +5,12 @@ import click
 from requests import get
 
 
-
 @click.command()
-@click.argument('url',)
+@click.argument('url')
 def main(url):
     if not url.startswith('http'):
         url = 'http://' + url
-    print(f'urlwait: waiting for {url}')
+    print(f'urlwait2: waiting for {url}')
 
     attempt = 1
     while True:
@@ -22,7 +21,7 @@ def main(url):
             attempt += 1
             time.sleep(2)
         else:
-            print(f'urlwait: successfully connected to {url}')
+            print(f'urlwait2: successfully connected to {url}')
             break
 
 

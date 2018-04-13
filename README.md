@@ -4,12 +4,12 @@ receives successful http status code.
 ## Installation
 
 ```
-pip install urlwait
+pip install urlwait2
 ```
 
 ## Usage
 To wait before starting celery worker:
 
 ```bash
-urlwait myhost/admin && celery -A myapp.app worker
+urlwait2 myhost && celery -A myapp.app worker
 ```

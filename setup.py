@@ -8,19 +8,19 @@ except (IOError, ImportError):
 
 
 setup(
-    name='urlwait',
+    name='urlwait2',
     version='0.1',
     description='wait for http url to return expected status code',
     long_description=description,
     author='Roman Evstifeev',
     author_email='someuniquename@gmail.com',
-    url='https://github.com/Fak3/urlwait',
+    url='https://github.com/Fak3/urlwait2',
     license='MIT',
     install_requires=['click'],
-    py_modules=['urlwait'],
+    py_modules=['urlwait2'],
     include_package_data=True,
     entry_points={
-        'console_scripts': ['urlwait = urlwait:main'],
+        'console_scripts': ['urlwait2 = urlwait2:main'],
     },
     classifiers = [
         'Development Status :: 4 - Beta',
