@@ -9,7 +9,7 @@ except (IOError, ImportError):
 
 setup(
     name='urlwait2',
-    version='0.2',
+    version='0.3',
     description='wait for http url to return expected status code',
     long_description=description,
     author='Roman Evstifeev',
